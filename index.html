@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>TechConf 2025</title>
 </head>
-<body>
+<body data-theme="light">
     <header>
         <h3>SETIF 2025 - A Revolução da Tecnologia</h4>
     </header>
@@ -19,6 +19,7 @@
         <p> <b>Local:</b> IFPR campus Paranavaí</p>
         <button>Inscreva-se</button>
         <button>Saiba Mais</button>
+        <button id="btAlterarTema" onclick="alterarTema()">Tema</button>
         <div class="cards">
             <div class="card">
                 <img src="images.jpg" alt="imagem B">
@@ -36,6 +37,10 @@
                 <p>Aprenda na prática com workshops interativos e dinâmicos.</p>
             </div>
         </div>
+        <div id="inscritos">
+
+        </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>

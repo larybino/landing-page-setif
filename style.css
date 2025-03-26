@@ -1,26 +1,44 @@
+:root{
+    --bg-color:#111;
+    --bg-color-container: #222;
+    --bg-color-texto: #fff;
+    --bg-color-container-menor: #333333;
+    --bg-color-button: #ff4500;
+    --bg-color-button-hover: #cc3700;
+    --bg-color-header: #1e90ff;
+}
+
+[data-theme="light"]{
+    --bg-color: #9b9b9b;
+    --bg-color-container: #ccc3c3;
+    --bg-color-texto: #111;
+    --bg-color-container-menor: #fff;
+}
+
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--bg-color-texto);
     text-align: center;
 }
 header{
-    background-color: hsl(209.6deg 100% 55.88%);
-    color: white;
+    background-color: var(--bg-color-header);
+    color: var(--bg-color-texto);
     padding: 1px;
 }
 
 
 section{
-    background-color: hsl(0deg 0% 13.33%);
+    background-color: var(--bg-color-container);
     padding: 10px;
     justify-content: center;
     text-align: center;
     margin: 10px 400px;
     border-radius: 10px;
-    box-shadow: 0 0 5px #222;
+    box-shadow: 0 0 5px var(--bg-color-container);
     font-size: 14px;
 }
 
@@ -30,8 +48,8 @@ section{
 }
 
 button{
-    background-color:hsl(16.24deg 100% 50%);
-    color: white;
+    background-color:var(--bg-color-button);
+    color: var(--bg-color-texto);
     border-radius: 5px;
     padding: 10px;
     width: 20%;
@@ -42,7 +60,7 @@ button{
 }
 
 button:hover{
-    background-color:hsl(16.24deg 100% 40%);
+    background-color:var(--bg-color-button-hover);
 }
 
 .cards{
@@ -53,7 +71,7 @@ button:hover{
 }
 
 .card{
-    background-color:hsl(0deg 0% 20%);
+    background-color:var(--bg-color-container-menor);
     display: flex;
     text-align: center;
     align-items: center;
